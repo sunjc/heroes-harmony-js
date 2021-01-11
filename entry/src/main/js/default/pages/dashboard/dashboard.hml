@@ -1,0 +1,32 @@
+<element name="nav" src="../../common/navigation/navigation.hml"></element>
+<div class="container">
+    <nav></nav>
+    <div class="row-40 center">
+        <text class="title">
+            {{ $t('strings.topHeroes') }}
+        </text>
+    </div>
+    <div class="row-40">
+        <text for="{{topHeroes}}" class="heroes" onclick="gotoDetails({{$item.id}})" tid="id">
+            {{$item.name}}
+        </text>
+    </div>
+    <div class="row-40">
+        <text class="normal-text">
+            {{ $t('strings.heroSearch') }}
+        </text>
+    </div>
+    <div class="row-40">
+        <search class="search" onsubmit="search"></search>
+    </div>
+    <list class="list" scrolleffect="spring">
+        <list-item for="{{heroes}}">
+            <text class="normal-text" onclick="gotoDetails({{$item.id}})">
+                {{$item.name}}
+            </text>
+        </list-item>
+    </list>
+    <div class="row-40 right">
+        <image src="common/images/icon.png" onclick="gotoComponents" class="icon"></image>
+    </div>
+</div>

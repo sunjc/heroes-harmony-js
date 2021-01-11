@@ -1,0 +1,9 @@
+<div class="nav">
+    <text class="title">
+        {{ $t('strings.appName') }}
+    </text>
+    <div class="row-40">
+        <button type="capsule" value="{{ $t('strings.dashboard') }}" onclick="gotoDashboard" class="nav-button"/>
+        <button type="capsule" value="{{ $t('strings.heroes') }}" onclick="gotoHeroes" class="nav-button"/>
+    </div>
+</div>

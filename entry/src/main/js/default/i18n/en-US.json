@@ -1,0 +1,28 @@
+{
+  "strings": {
+    "appName": "Tour of Heroes",
+    "components": "HarmonyOS Components",
+    "dashboard": "Dashboard",
+    "heroes": "Heroes",
+    "topHeroes": "Top Heroes",
+    "heroSearch": "Hero Search",
+    "myHeroes": "My Heroes",
+    "heroName": "Hero Name",
+    "add": "Add",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure delete {name}?",
+    "deleteConfirmB": "Do you want to delete {0}?",
+    "no": "NO",
+    "id": "ID",
+    "name": "Name",
+    "details": "Details",
+    "back": "Back",
+    "save": "Save",
+    "hero": {
+      "one": "one hero",
+      "other": "{count} heroes"
+    }
+  },
+  "Files": {
+  }
+}

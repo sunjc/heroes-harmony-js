@@ -1,0 +1,213 @@
+@import '../../common/style.css';
+.tabs {
+    width: 100%;
+}
+.tab-bar {
+    height: 40px;
+    border-color: #007dff;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.tab-text {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    width: 117px;
+}
+.tab-text:active {
+    border-bottom: 1px #007dff;
+}
+.tab-content {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.item-content {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.text {
+    background: linear-gradient(to right, red, yellow);
+    border-radius: 10px;
+    font-size: 16px;
+    height: 30px;
+    width: 160px;
+    text-align: center;
+}
+.marquee {
+    color: chocolate;
+    font-size: 16px;
+    height: 30px;
+    width: 160px;
+    margin-left: 10px;
+}
+.rating {
+    background-color: cadetblue;
+    height: 30px;
+    width: 160px;
+    margin-left: 10px;
+}
+.label {
+    background: linear-gradient(to left, red, yellow);
+    border-radius: 10px;
+    font-size: 16px;
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    margin-left: 10px;
+}
+.button {
+    margin-left: 10px;
+    background-color: lightgray;
+    font-size: 16px;
+    height: 30px;
+    text-color: black;
+}
+.button:waiting {
+    width: 120px;
+}
+.download {
+    width: 100px;
+    text-color: white;
+    background-color: #007dff;
+}
+.circle {
+    background-color: #007dff;
+    radius: 15px;
+    icon-width: 20px;
+    icon-height: 20px;
+}
+.switch {
+    width: 80px;
+    height: 30px;
+}
+.input {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+    placeholder-color: gray;
+    text-color: black;
+}
+.search {
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+    placeholder-color: gray;
+    color: black;
+}
+.select {
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    background-image: url('/common/images/options.png');
+    background-size: 65% 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dialog-main {
+    width: 500px;
+}
+.dialog-content {
+    flex-direction: column;
+    align-items: center;
+}
+.dialog-info {
+    width: 400px;
+    height: 160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.dialog-btn {
+    width: 400px;
+    height: 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+.slider {
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+.horizontal-progress {
+    width: 150px;
+    color: greenyellow;
+    background-color: aquamarine;
+    stroke-width: 4px;
+}
+.ring-progress {
+    color: linear-gradient(#ff0000, #00ff00);
+    background-color: aquamarine;
+    stroke-width: 8px;
+    width: 100px;
+    height: 80px;
+}
+.scale-ring-progress {
+    color: linear-gradient(green, red);
+    background-color: darkorchid;
+    stroke-width: 8px;
+    width: 100px;
+    height: 80px;
+}
+.circular-progress {
+    color: red;
+    width: 100px;
+    height: 80px;
+}
+.arc-progress {
+    color: lightskyblue;
+    background-color: deepskyblue;
+    stroke-width: 8px;
+    start-angle: 240;
+    total-angle: 240;
+    width: 100px;
+    height: 80px;
+}
+.hero {
+    width: 30px;
+    height: 30px;
+    object-fit: scale-down;
+    margin-left: 10px;
+}
+.swiper {
+    height: 288px;
+    width: 255px;
+    indicator-color: #4682b4;
+    indicator-selected-color: #f0e68c;
+    indicator-size: 10px;
+    margin-left: 10px;
+}
+.image {
+    object-fit: contain;
+}
+.images {
+    width: 432px;
+    height: 288px;
+}
+.divider {
+    color: gray;
+    stroke-width: 1px;
+}
+.picker {
+    color: black;
+    selected-color: darkblue;
+    focus-color: blue;
+    height: 130px;
+}
+.chart-data {
+    width: 350px;
+    height: 170px;
+}
+.gauge-data {
+    colors: #83f115, #fd3636, #3bf8ff;
+    weights: 4, 2, 1;
+    width: 350px;
+    height: 170px;
+}

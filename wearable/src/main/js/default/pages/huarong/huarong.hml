@@ -1,0 +1,14 @@
+<div class="container">
+    <text class="seconds">
+        用时：{{seconds}}s
+    </text>
+    <stack class="stack">
+        <canvas class="canvas" id="canvas" ref="canvas" onkey="move"></canvas>
+        <image src="common/images/smiling.png" class="success" show="{{isSuccess}}" onclick="start"></image>
+    </stack>
+    <div class="bottom">
+        <button type="circle" icon="common/images/hero.png" class="button" onclick="gotoHeroes"></button>
+        <button type="circle" icon="common/images/start.png" class="button" onclick="start"></button>
+        <button type="circle" icon="common/images/setting.png" class="button" onclick="gotoSetting"></button>
+    </div>
+</div>

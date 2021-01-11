@@ -1,0 +1,13 @@
+<div class="container">
+    <text class="text">
+        难度
+    </text>
+    <picker-view selected="{{levelsIndex}}}" range="{{levels}}" type="text" class="picker col-100"
+            onchange="levelChange"></picker-view>
+    <text class="text">
+        列数
+    </text>
+    <picker-view selected="{{columnsIndex}}" range="{{columns}}" type="text" class="picker col-60"
+            onchange="colsChange"></picker-view>
+    <button type="circle" icon="common/images/back.png" class="button" onclick="back"></button>
+</div>

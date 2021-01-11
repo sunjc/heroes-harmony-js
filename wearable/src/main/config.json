@@ -1,0 +1,74 @@
+{
+  "app": {
+    "bundleName": "io.itrunner.heroes",
+    "vendor": "itrunner",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "io.itrunner.heroes.wearable",
+    "name": ".WearableApplication",
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.LOCATION"
+      },
+      {
+        "name": "ohos.permission.GET_WIFI_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      }
+    ],
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "wearable",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "io.itrunner.heroes.wearable.MainAbility",
+        "icon": "$media:hero",
+        "description": "$string:mainability_description",
+        "label": "$string:app_name",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/heroes/heroes",
+          "pages/sleep/sleep",
+          "pages/system/system",
+          "pages/huarong/huarong",
+          "pages/setting/setting"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 454,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}

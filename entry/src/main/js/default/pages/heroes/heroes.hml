@@ -1,0 +1,41 @@
+<element name="nav" src="../../common/navigation/navigation.hml"></element>
+<element name="delete-button" src="../../common/deletebutton/delete-button.hml"></element>
+<div class="container">
+    <nav></nav>
+    <div class="row-40">
+        <text class="title">
+            {{ $t('strings.myHeroes') }}
+        </text>
+    </div>
+    <div class="row-40">
+        <text class="normal-text">
+            {{ $t('strings.heroName') }}
+        </text>
+        <input type="text" value="{{heroName}}" class="input" enterkeytype="done" maxlength="30"
+                onchange="nameChanged"></input>
+        <button type="capsule" value="{{$t('strings.add')}}" class="button" onclick="addHero"></button>
+    </div>
+    <list class="list" itemscale="false" scrolleffect="spring">
+        <list-item class="list-item-header border-full">
+            <text class="col-40 border-right">
+                {{$t('strings.no')}}
+            </text>
+            <text class="col-400 border-right">
+                {{$t('strings.name')}}
+            </text>
+            <text class="col-50">
+                {{$t('strings.delete')}}
+            </text>
+        </list-item>
+        <list-item for="{{heroes}}" class="list-item border-no-top">
+            <text class="col-40 border-right">
+                {{$idx + 1}}
+            </text>
+            <text class="col-400 border-right" onclick="gotoDetails({{$item.id}})">
+                {{$item.name}}
+            </text>
+            <delete-button confirm="true" entityid="{{$item.id}}" keyword="{{$item.name}}"
+                    @delete="deleteHero()"></delete-button>
+        </list-item>
+    </list>
+</div>

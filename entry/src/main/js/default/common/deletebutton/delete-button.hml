@@ -1,0 +1,16 @@
+<div class="container">
+    <button type="text" value="X" class="detete-button" onclick="deleteObject"></button>
+    <dialog id="deletedialog" class="dialog-main">
+        <div class="dialog-content">
+            <div class="dialog-info">
+                <text>
+                    {{dialogInfo}}
+                </text>
+            </div>
+            <div class="dialog-button">
+                <button type="capsule" value="No" onclick="closeDialog"></button>
+                <button type="capsule" value="Yes" onclick="exeDelete"></button>
+            </div>
+        </div>
+    </dialog>
+</div>

@@ -1,0 +1,29 @@
+@import '../../common/style.css';
+
+.list {
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+    background-color: white;
+    flex-direction: column;
+}
+.list-item-header, .list-item {
+    width: 500px;
+    height: 22px;
+    align-items: center;
+    position: relative;
+    left: -25px;
+}
+.list-item-header {
+    background-color: #fafafa;
+}
+.list-item-header text, .list-item text {
+    color: black;
+    font-size: 14px;
+}
+.list-item-header text {
+    text-align: center;
+}
+.list-item text {
+    padding-left: 4px;
+}

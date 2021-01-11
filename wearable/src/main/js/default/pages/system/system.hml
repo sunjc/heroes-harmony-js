@@ -1,0 +1,181 @@
+<div class="container">
+    <div class="row-top">
+        <div class="grid-top-left">
+            <div class="right">
+                <text>
+                    电量
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ batteryLevel }}
+                </text>
+            </div>
+            <div class="right">
+                <text>
+                    充电中
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ batteryCharging }}
+                </text>
+            </div>
+        </div>
+        <div class="grid-top-right">
+            <div>
+                <text>
+                    亮度
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ brightness }}
+                </text>
+            </div>
+            <div>
+                <text>
+                    模式
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ brightnessMode }}
+                </text>
+            </div>
+        </div>
+    </div>
+    <div class="grig-middle">
+        <div class="right">
+            <text>
+                品牌
+            </text>
+        </div>
+        <div>
+            <text>
+                {{deviceBrand}}
+            </text>
+        </div>
+        <div>
+            <text>
+                屏幕形状
+            </text>
+        </div>
+        <div>
+            <text>
+                {{deviceScreenShape}}
+            </text>
+        </div>
+        <div class="right">
+            <text>
+                生产商
+            </text>
+        </div>
+        <div>
+            <text>
+                {{deviceManufacturer}}
+            </text>
+        </div>
+        <div>
+            <text>
+                语言
+            </text>
+        </div>
+        <div>
+            <text>
+                {{deviceLanguage}}
+            </text>
+        </div>
+        <div class="right">
+            <text>
+                型号
+            </text>
+        </div>
+        <div>
+            <text>
+                {{deviceModel}}
+            </text>
+        </div>
+        <div>
+            <text>
+                地区
+            </text>
+        </div>
+        <div>
+            <text>
+                {{deviceRegion}}
+            </text>
+        </div>
+    </div>
+    <div class="row-bottom">
+        <div class="grid-bottom-left">
+            <div class="right">
+                <text>
+                    定位精度
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ locationAccuracy }}
+                </text>
+            </div>
+            <div class="right">
+                <text>
+                    经度
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ locationLongitude }}
+                </text>
+            </div>
+            <div class="right">
+                <text>
+                    纬度
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ locationLatitude }}
+                </text>
+            </div>
+        </div>
+        <div class="grid-bottom-right">
+            <div>
+                <text>
+                    定位类型
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ locationType }}
+                </text>
+            </div>
+            <div>
+                <text>
+                    网络类型
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ networkType }}
+                </text>
+            </div>
+            <div>
+                <text>
+                    流量计费
+                </text>
+            </div>
+            <div>
+                <text>
+                    {{ networkMetered }}
+                </text>
+            </div>
+        </div>
+    </div>
+    <div class="row-footer">
+        <text>
+            {{ time }}
+        </text>
+    </div>
+</div>

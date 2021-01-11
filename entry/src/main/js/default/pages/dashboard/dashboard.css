@@ -1,0 +1,41 @@
+@import '../../common/style.css';
+.heroes {
+    background-color: #607D8B;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    height: 40px;
+    width: 160px;
+    margin-right: 10px;
+}
+.search {
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+}
+.list {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

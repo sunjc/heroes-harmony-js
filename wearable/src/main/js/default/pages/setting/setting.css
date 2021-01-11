@@ -1,0 +1,25 @@
+.container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    width: 60px;
+    font-size: 30px;
+}
+.picker {
+    font-size: 30px;
+    selected-font-size: 38px;
+    focus-font-size: 38px;
+}
+.col-60 {
+    width: 60px;
+}
+.col-100 {
+    width: 100px;
+}
+.button {
+    radius: 15px;
+    icon-width: 30px;
+    icon-height: 30px;
+}

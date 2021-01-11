@@ -1,0 +1,14 @@
+<div class="container">
+    <image src="common/images/game.png" class="image" onclick="gotoHuarong"></image>
+    <list class="list" itemcenter="true" itemscale="true" initialindex="4">
+        <list-item for="{{heroes}}" class="list-item">
+            <text class="normal-text">
+                {{$item}}
+            </text>
+        </list-item>
+    </list>
+    <div class="right">
+        <image src="common/images/sleep.png" class="image" onclick="gotoSleep"></image>
+        <image src="common/images/system.png" class="image" onclick="gotoSystem"></image>
+    </div>
+</div>

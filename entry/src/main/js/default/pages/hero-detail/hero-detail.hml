@@ -1,0 +1,28 @@
+<element name="nav" src="../../common/navigation/navigation.hml"></element>
+<div class="container">
+    <nav></nav>
+    <div class="row-40">
+        <text class="title">
+            {{ $t('strings.details') }}
+        </text>
+    </div>
+    <div class="row-40">
+        <label class="label">
+            {{ $t('strings.id') }}
+        </label>
+        <text class="normal-text">
+            {{hero.id}}
+        </text>
+    </div>
+    <div class="row-40">
+        <label target="name" class="label">
+            {{ $t('strings.name') }}
+        </label>
+        <input value="{{hero.name}}" type="text" id="name" class="input" enterkeytype="done" maxlength="30"
+                onchange="nameChange"></input>
+    </div>
+    <div class="row-40">
+        <button type="capsule" value="{{ $t('strings.back')}}" onclick="back" class="button"></button>
+        <button type="capsule" value="{{ $t('strings.save')}}" onclick="save" class="button"></button>
+    </div>
+</div>

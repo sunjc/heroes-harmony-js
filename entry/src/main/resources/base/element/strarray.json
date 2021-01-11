@@ -1,0 +1,39 @@
+{
+  "strarray": [
+    {
+      "name": "heroes",
+      "value": [
+        {
+          "value": "Dr Nice"
+        },
+        {
+          "value": "Narco"
+        },
+        {
+          "value": "Bombasto"
+        },
+        {
+          "value": "Celeritas"
+        },
+        {
+          "value": "Magneta"
+        },
+        {
+          "value": "RubberMan"
+        },
+        {
+          "value": "Dynama"
+        },
+        {
+          "value": "Dr IQ"
+        },
+        {
+          "value": "Magma"
+        },
+        {
+          "value": "Tornado"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row-50 {
+    height: 50px;
+    justify-content: center;
+}
+.row-180 {
+    height: 180px;
+    justify-content: center;
+}
+.image {
+    width: 64px;
+    height: 64px;
+}
+.text-normal {
+    font-size: 32px;
+}
+.text-midium {
+    font-size: 42px;
+}
+.text-large {
+    font-size: 116px;
+}

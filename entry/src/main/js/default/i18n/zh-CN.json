@@ -1,0 +1,27 @@
+{
+  "strings": {
+    "appName": "英雄之旅",
+    "components": "HarmonyOS组件",
+    "dashboard": "仪表盘",
+    "heroes": "英雄",
+    "topHeroes": "英雄排行榜",
+    "heroSearch": "搜索英雄",
+    "myHeroes": "我的英雄",
+    "heroName": "英雄名称",
+    "add": "增加",
+    "delete": "删除",
+    "deleteConfirm": "确定要删除 {name} 吗？",
+    "deleteConfirmB": "你想删除 {0} 吗?",
+    "no": "序号",
+    "id": "ID",
+    "name": "名称",
+    "details": "英雄详情",
+    "back": "返回",
+    "save": "保存",
+    "hero": {
+      "other": "{count} 位英雄"
+    }
+  },
+  "Files": {
+  }
+}

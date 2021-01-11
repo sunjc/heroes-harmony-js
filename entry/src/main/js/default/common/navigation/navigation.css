@@ -1,0 +1,18 @@
+/*navigation.css*/
+@import '../style.css';
+
+.nav {
+    height: 80px;
+    margin-left: 4px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.nav-button {
+    height: 30px;
+    width: 120px;
+    margin-top: 10px;;
+    margin-right: 10px;
+    background-color: lightgray;
+    font-size: 16px;
+    text-color: black;
+}

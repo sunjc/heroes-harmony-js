@@ -1,0 +1,31 @@
+<div class="container">
+    <image src="common/images/sleep.png" class="image"></image>
+    <text class="text-normal">
+        {{ $t('strings.sleep') }}
+    </text>
+    <div class="row-180">
+        <text class="text-large">
+            {{sleepHours}}
+        </text>
+        <text class="text-normal">
+            {{ $t('strings.hour') }}
+        </text>
+        <text class="text-large">
+            {{sleepMinutes}}
+        </text>
+        <text class="text-normal">
+            {{ $t('strings.minute') }}
+        </text>
+    </div>
+    <div class="row-50">
+        <text class="text-normal">
+            {{ $t('strings.goal') }}
+        </text>
+        <text class="text-midium">
+            {{sleepGoal}}
+        </text>
+        <text class="text-normal">
+            {{ $t('strings.hour') }}
+        </text>
+    </div>
+</div>

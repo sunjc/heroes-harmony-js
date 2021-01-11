@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Tour of Heroes"
+    },
+    {
+      "name": "mainability_description",
+      "value": "heroes main page"
+    },
+    {
+      "name": "serviceability_description",
+      "value": "hero service"
+    }
+  ]
+}

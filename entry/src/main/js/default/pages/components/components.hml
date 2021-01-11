@@ -1,0 +1,138 @@
+<div class="container">
+    <text class="title">
+        {{ $t('strings.components') }}
+    </text>
+    <tabs>
+        <tab-bar class="tab-bar" mode="fixed">
+            <text class="tab-text">
+                Basic
+            </text>
+            <text class="tab-text">
+                Image
+            </text>
+            <text class="tab-text">
+                Picker View
+            </text>
+            <text class="tab-text">
+                Chart
+            </text>
+        </tab-bar>
+        <tab-content class="tab-content" scrollable="true">
+            <div class="item-content">
+                <div class="row-50">
+                    <text class="text">
+                        Hello HarmonyOS
+                    </text>
+                    <marquee class="marquee">
+                        Marquee
+                    </marquee>
+                    <rating numstars="5" rating="4" class="rating"></rating>
+                    <label class="label">
+                        Hello World
+                    </label>
+                </div>
+                <div class="row-50">
+                    <button type="text" value="Text Button" class="button"></button>
+                    <button type="capsule" value="Capsule Button" class="button"></button>
+                    <button type="capsule" waiting="true" value="Loading" class="button"></button>
+                    <button type="download" id="download-btn" class="button download" onclick="setProgress">
+                        {{downloadText}}
+                    </button>
+                    <button type="circle" icon="common/images/star.png" class="button circle"></button>
+                    <switch showtext="false" checked="true" class="switch"/>
+                </div>
+                <div class="row-50">
+                    <input value="{{email}}" type="email" id="email-input" placeholder="Enter an email" class="input"
+                            enterkeytype="done" onchange="emailChanged" onenterkeyclick="validateEmail"/>
+                    <input type="date" id="date-input" placeholder="Enter a date" enterkeytype="done" class="input"/>
+                    <input type="time" id="time-input" placeholder="Enter a time" enterkeytype="done" class="input"/>
+                </div>
+                <div class="row-50">
+                    <search hint="Search" class="search"></search>
+                    <select id="select" class="select" onchange="selectChanged">
+                        <option value="Option 1" selected="true">
+                            Option 1
+                        </option>
+                        <option value="Option 2">
+                            Option 2
+                        </option>
+                        <option value="Option 3">
+                            Option 3
+                        </option>
+                        <option value="Option 4">
+                            Option 4
+                        </option>
+                    </select>
+                    <button type="capsule" value="Show Popup Menu" onclick="showMenu" class="button"></button>
+                    <menu id="menu" onselected="menuSelected" title="Test Menu">
+                        <option value="Item 1">
+                            Item 1
+                        </option>
+                        <option value="Item 2">
+                            Item 2
+                        </option>
+                        <option value="Item 3">
+                            Item 3
+                        </option>
+                    </menu>
+                    <button type="capsule" value="Show Dialog" onclick="showDialog" class="button"></button>
+                    <dialog id="simpledialog" class="dialog-main" oncancel="cancelDialog">
+                        <div class="dialog-content">
+                            <div class="dialog-info">
+                                <text>
+                                    Simple dialog
+                                </text>
+                            </div>
+                            <div class="dialog-btn">
+                                <button type="capsule" value="Cancel" onclick="cancel"></button>
+                                <button type="capsule" value="Confirm" onclick="confirm"></button>
+                            </div>
+                        </div>
+                    </dialog>
+                    <button type="capsule" value="Show Prompt Dialog" onclick="showPromptDialog"
+                            class="button"></button>
+                </div>
+                <div class="row-80">
+                    <slider min="1" max="255" value="50" class="slider"></slider>
+                    <progress type="horizontal" percent="25" class="horizontal-progress"></progress>
+                    <progress type="ring" percent="25" class="ring-progress"></progress>
+                    <progress type="scale-ring" percent="70" class="scale-ring-progress"></progress>
+                    <progress type="circular" percent="50" class="circular-progress"></progress>
+                    <progress type="arc" percent="25" class="arc-progress"></progress>
+                </div>
+                <div>
+                    <image src="common/images/hero.png" onclick="back" class="hero"/>
+                </div>
+            </div>
+            <div class="item-content">
+                <div class="row-310">
+                    <image-animator images="{{trailImages}}" duration="10000" class="images"/>
+                    <swiper class="swiper" autoplay="true" interval="2000" indicator="true" loop="true">
+                        <image src="{{$item}}" for="{{pandaImages}}" class="image"/>
+                    </swiper>
+                </div>
+            </div>
+            <div class="item-content">
+                <div class="row-150">
+                    <picker-view type="text" range="{{range}}" class="picker col-100"></picker-view>
+                    <picker-view type="multi-text" columns="2" range="{{ranges}}" class="picker col-100"></picker-view>
+                </div>
+                <divider class="divider"></divider>
+                <div class="row-150">
+                    <picker-view type="date" class="picker"></picker-view>
+                    <picker-view type="datetime" class="picker"></picker-view>
+                    <picker-view type="time" containsecond="false" hours="24" class="picker"></picker-view>
+                </div>
+            </div>
+            <div class="item-content">
+                <div>
+                    <chart type="line" options="{{lineOps}}" datasets="{{lineData}}" class="chart-data"/>
+                    <chart type="bar" options="{{barOps}}" datasets="{{barData}}" class="chart-data"/>
+                </div>
+                <div>
+                    <chart type="gauge" percent="50" class="gauge-data"></chart>
+                </div>
+            </div>
+        </tab-content>
+    </tabs>
+</div>
