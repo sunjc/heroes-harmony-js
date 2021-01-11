@@ -12,8 +12,8 @@ const ARROW_KEYS = {
     '22': ARROW_RIGHT
 };
 const CANVAS_LENGTH = 305;
-const MARGIN = 5;
-var grids = [];
+const BORDER_WIDTH = 5;
+var numbers = [];
 var timer;
 
 export default {
@@ -70,14 +70,14 @@ export default {
         }
     },
     initGrids(cols) { // 根据宫格数初始化数字二维数组
-        grids = [];
+        numbers = [];
         for (let row = 0; row < cols; row++) {
-            grids[row] = [0];
+            numbers[row] = [0];
             for (let col = 0; col < cols; col++) {
                 if (row == cols - 1 && col == cols - 1) {
-                    grids[row][col] = 0;
+                    numbers[row][col] = 0;
                 } else {
-                    grids[row][col] = row * cols + col + 1;
+                    numbers[row][col] = row * cols + col + 1;
                 }
             }
         }
@@ -95,21 +95,21 @@ export default {
     drawGrids() { // 绘制数字宫格
         const context = this.$element('canvas').getContext('2d');
 
-        const cols = grids.length;
-        const sideLength = (CANVAS_LENGTH - (cols + 1) * MARGIN) / cols
+        const cols = numbers.length;
+        const sideLength = (CANVAS_LENGTH - (cols + 1) * BORDER_WIDTH) / cols
         const heroImage = new Image();
         heroImage.src = 'common/images/hero.png';
 
         for (let row = 0; row < cols; row++) {
             for (let column = 0; column < cols; column++) {
                 context.fillStyle = '#D2691E';
-                const leftTopX = column * (MARGIN + sideLength) + MARGIN;
-                const leftTopY = row * (MARGIN + sideLength) + MARGIN;
+                const leftTopX = column * (BORDER_WIDTH + sideLength) + BORDER_WIDTH;
+                const leftTopY = row * (BORDER_WIDTH + sideLength) + BORDER_WIDTH;
                 context.fillRect(leftTopX, leftTopY, sideLength, sideLength);
 
                 context.drawImage(heroImage, leftTopX + sideLength - 20, leftTopY + sideLength - 20, 20, 20);
 
-                const gridStr = grids[row][column].toString();
+                const gridStr = numbers[row][column].toString();
                 if (gridStr != '0') {
                     context.font = '40px HYQiHei-65S';
                     context.fillStyle = '#000000';
@@ -121,14 +121,14 @@ export default {
         }
     },
     swapGrids(direction) { // 与0交换位置
-        const cols = grids.length;
+        const cols = numbers.length;
 
         // 查找0所在的行与列
         let zero_row;
         let zero_col;
         for (let row = 0; row < cols; row++) {
             for (let column = 0; column < cols; column++) {
-                if (grids[row][column] == 0) {
+                if (numbers[row][column] == 0) {
                     zero_row = row;
                     zero_col = column;
                     break;
@@ -155,17 +155,17 @@ export default {
         }
 
         // 与0交换位置
-        grids[zero_row][zero_col] = grids[target_row][target_col];
-        grids[target_row][target_col] = 0;
+        numbers[zero_row][zero_col] = numbers[target_row][target_col];
+        numbers[target_row][target_col] = 0;
     },
     checkResult() { // 检查数字是否已有序排列
-        const cols = grids.length;
+        const cols = numbers.length;
         for (let row = 0; row < cols; row++) {
             for (let column = 0; column < cols; column++) {
                 if (row == cols - 1 && column == cols - 1) {
-                    return grids[row][column] == 0;
+                    return numbers[row][column] == 0;
                 }
-                if (grids[row][column] != row * cols + column + 1) {
+                if (numbers[row][column] != row * cols + column + 1) {
                     return false;
                 }
             }
