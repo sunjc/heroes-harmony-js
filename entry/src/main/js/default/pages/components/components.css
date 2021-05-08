@@ -165,8 +165,8 @@
     color: lightskyblue;
     background-color: deepskyblue;
     stroke-width: 8px;
-    start-angle: 240;
-    total-angle: 240;
+    start-angle: 240deg;
+    total-angle: 240deg;
     width: 100px;
     height: 80px;
 }

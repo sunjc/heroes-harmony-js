@@ -16,9 +16,9 @@ public class HeroServiceAbility extends Ability {
     private static final String TAG = HeroServiceAbility.class.getSimpleName();
     private static final HiLogLabel LOG_LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00102, TAG);
 
-    private HeroRemote remote = new HeroRemote();
+    private final HeroRemote remote = new HeroRemote();
 
-    private HeroService service = new HeroService(this);
+    private final HeroService service = new HeroService(this);
 
     @Override
     protected void onStart(Intent intent) {

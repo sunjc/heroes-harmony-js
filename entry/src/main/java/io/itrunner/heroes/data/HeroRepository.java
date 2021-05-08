@@ -11,7 +11,7 @@ public class HeroRepository {
     private static final String ID = "id";
     private static final String HERO_NAME = "hero_name";
 
-    private OrmContext ormContext;
+    private final OrmContext ormContext;
 
     public HeroRepository(Context context) {
         ormContext = DBUtils.getOrmContext(context);

@@ -3,13 +3,13 @@
     "bundleName": "io.itrunner.heroes",
     "vendor": "itrunner",
     "version": {
-      "code": 1,
-      "name": "1.0"
+      "code": 1000000,
+      "name": "1.0.0"
     },
     "apiVersion": {
-      "compatible": 4,
-      "target": 4,
-      "releaseType": "Beta1"
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Release"
     }
   },
   "deviceConfig": {},

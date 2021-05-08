@@ -14,7 +14,7 @@ public class HeroService {
     private static final int GET_ONE = 10023;
     private static final int QUERY_BY_NAME = 10024;
 
-    private HeroRepository repository;
+    private final HeroRepository repository;
 
     public HeroService(Context context) {
         repository = new HeroRepository(context);
