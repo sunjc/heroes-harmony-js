@@ -6,7 +6,7 @@
                     电量
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ batteryLevel }}
                 </text>
@@ -16,36 +16,36 @@
                     充电中
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ batteryCharging }}
                 </text>
             </div>
         </div>
         <div class="grid-top-right">
-            <div>
+            <div class="right">
                 <text>
                     亮度
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ brightness }}
                 </text>
             </div>
-            <div>
+            <div class="right">
                 <text>
                     模式
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ brightnessMode }}
                 </text>
             </div>
         </div>
     </div>
-    <div class="grig-middle">
+    <div class="grid-middle">
         <div class="right">
             <text>
                 品牌
@@ -53,17 +53,17 @@
         </div>
         <div>
             <text>
-                {{deviceBrand}}
+                {{ deviceBrand }}
             </text>
         </div>
-        <div>
+        <div class="right">
             <text>
                 屏幕形状
             </text>
         </div>
-        <div>
+        <div class="left">
             <text>
-                {{deviceScreenShape}}
+                {{ deviceScreenShape }}
             </text>
         </div>
         <div class="right">
@@ -73,17 +73,17 @@
         </div>
         <div>
             <text>
-                {{deviceManufacturer}}
+                {{ deviceManufacturer }}
             </text>
         </div>
-        <div>
+        <div class="right">
             <text>
                 语言
             </text>
         </div>
-        <div>
+        <div class="left">
             <text>
-                {{deviceLanguage}}
+                {{ deviceLanguage }}
             </text>
         </div>
         <div class="right">
@@ -93,17 +93,17 @@
         </div>
         <div>
             <text>
-                {{deviceModel}}
+                {{ deviceModel }}
             </text>
         </div>
-        <div>
+        <div class="right">
             <text>
                 地区
             </text>
         </div>
-        <div>
+        <div class="left">
             <text>
-                {{deviceRegion}}
+                {{ deviceRegion }}
             </text>
         </div>
     </div>
@@ -146,7 +146,7 @@
                     定位类型
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ locationType }}
                 </text>
@@ -156,7 +156,7 @@
                     网络类型
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ networkType }}
                 </text>
@@ -166,7 +166,7 @@
                     流量计费
                 </text>
             </div>
-            <div>
+            <div class="left">
                 <text>
                     {{ networkMetered }}
                 </text>
