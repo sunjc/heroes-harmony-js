@@ -5,24 +5,21 @@
     "version": {
       "code": 1000000,
       "name": "1.0.0"
-    },
-    "apiVersion": {
-      "compatible": 5,
-      "target": 5,
-      "releaseType": "Release"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "io.itrunner.heroes",
     "name": ".HeroesApplication",
+    "mainAbility": "io.itrunner.heroes.MainAbility",
     "deviceType": [
       "tv"
     ],
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "entry",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": true
     },
     "metaData": {
       "customizeData": [
@@ -70,7 +67,7 @@
         "name": "default",
         "window": {
           "designWidth": 720,
-          "autoDesignWidth": false
+          "autoDesignWidth": true
         }
       }
     ]

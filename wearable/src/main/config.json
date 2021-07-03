@@ -5,17 +5,13 @@
     "version": {
       "code": 1000000,
       "name": "1.0.0"
-    },
-    "apiVersion": {
-      "compatible": 5,
-      "target": 5,
-      "releaseType": "Release"
     }
   },
   "deviceConfig": {},
   "module": {
     "package": "io.itrunner.heroes.wearable",
     "name": ".WearableApplication",
+    "mainAbility": "io.itrunner.heroes.wearable.MainAbility",
     "reqPermissions": [
       {
         "name": "ohos.permission.LOCATION"
@@ -33,7 +29,8 @@
     "distro": {
       "deliveryWithInstall": true,
       "moduleName": "wearable",
-      "moduleType": "entry"
+      "moduleType": "entry",
+      "installationFree": true
     },
     "abilities": [
       {

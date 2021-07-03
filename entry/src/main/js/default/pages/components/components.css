@@ -3,7 +3,9 @@
     width: 100%;
 }
 .tab-bar {
-    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
     border-color: #007dff;
     border-width: 1px;
     border-radius: 4px;
@@ -19,11 +21,9 @@
 }
 .tab-content {
     width: 100%;
-    height: 100%;
     justify-content: center;
 }
 .item-content {
-    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -174,11 +174,12 @@
     width: 30px;
     height: 30px;
     object-fit: scale-down;
+    margin-top: 100px;
     margin-left: 10px;
 }
 .swiper {
-    height: 288px;
-    width: 255px;
+    width: 337px;
+    height: 380px;
     indicator-color: #4682b4;
     indicator-selected-color: #f0e68c;
     indicator-size: 10px;
@@ -188,8 +189,9 @@
     object-fit: contain;
 }
 .images {
-    width: 432px;
-    height: 288px;
+    width: 570px;
+    height: 380px;
+    margin-left: 20px;
 }
 .divider {
     color: gray;
@@ -202,8 +204,8 @@
     height: 130px;
 }
 .chart-data {
-    width: 350px;
-    height: 170px;
+    width: 450px;
+    height: 220px;
 }
 .gauge-data {
     colors: #83f115, #fd3636, #3bf8ff;
